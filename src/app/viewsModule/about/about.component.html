@@ -1,0 +1,31 @@
+<div class="about-modal" [class.modalShow]="modalShow"></div>
+<div class="about animated attachedLeft" [class.slideOutLeft]="isClosing" [class.slideInLeft]="isOpening" [class.expanded]="expanded">
+    <div class="about-close-btn col-xs-12">
+        <div (click)="onClose()" class="about-close fa fa-times"></div>
+    </div>
+	<p class="about-title">About </p>
+    <div class="about-content">
+        
+        <div class="about-links">
+            <!-- <a (click)="openChild()">Sales and Marketing</a> -->
+            <a class="row about-link" (click)="expanded=true; activeIndex=0"><div class="about-icon icon-glossary-fill"></div><p class="about-link-text"> School</p></a>
+            <a class="row about-link" (click)="expanded=true; activeIndex=1"><div class="about-icon icon-glossary-fill"></div><p class="about-link-text"> College</p></a>
+            <a class="row about-link" (click)="expanded=true; activeIndex=2"><div class="about-icon icon-glossary-fill"></div><p class="about-link-text"> Engineering</p></a>
+            
+        </div>
+        <div class="about-expansion" *ngIf="expanded" [ngSwitch]="activeIndex">
+            
+            <div class="expanded-content glossary" *ngSwitchCase="0">
+                School
+            </div>
+
+            <div class="expanded-content guide" *ngSwitchCase="1">
+                College
+            </div>
+
+            <div class="expanded-content planning" *ngSwitchCase="2">
+                Engineering
+            </div>
+        </div>
+    </div>
+</div>

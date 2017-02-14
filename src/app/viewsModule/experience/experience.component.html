@@ -1,0 +1,31 @@
+<div class="experience-modal" [class.modalShow]="modalShow"></div>
+<div class="experience animated attachedRight" [class.slideOutRight]="isClosing" [class.slideInRight]="isOpening" [class.expanded]="expanded">
+    <div class="experience-close-btn col-xs-12">
+        <div (click)="onClose()" class="experience-close fa fa-times"></div>
+    </div>
+	<p class="experience-title">Experience </p>
+    <div class="experience-content">
+        
+        <div class="experience-links">
+            <!-- <a (click)="openChild()">Sales and Marketing</a> -->
+            <a class="row experience-link" (click)="expanded=true; activeIndex=0"><div class="experience-icon icon-glossary-fill"></div><p class="experience-link-text"> Quarry</p></a>
+            <a class="row experience-link" (click)="expanded=true; activeIndex=1"><div class="experience-icon icon-glossary-fill"></div><p class="experience-link-text"> Zeus Learning</p></a>
+            <a class="row experience-link" (click)="expanded=true; activeIndex=2"><div class="experience-icon icon-glossary-fill"></div><p class="experience-link-text"> BTS</p></a>
+            
+        </div>
+        <div class="experience-expansion" *ngIf="expanded" [ngSwitch]="activeIndex">
+            
+            <div class="expanded-content glossary" *ngSwitchCase="0">
+                Quarry
+            </div>
+
+            <div class="expanded-content guide" *ngSwitchCase="1">
+                Zeus Learning
+            </div>
+
+            <div class="expanded-content planning" *ngSwitchCase="2">
+                BTS
+            </div>
+        </div>
+    </div>
+</div>

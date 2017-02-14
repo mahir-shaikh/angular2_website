@@ -1,0 +1,66 @@
+[
+    {
+        "type": "logo",
+        "content":[
+            {
+                "title": "Rio",
+                "description": "The number of active participants you had last year in this customer segment",
+                "height" : "360",
+                "width" : "360",
+                "name" : ["logo_A1"]
+            },
+            {
+                "title": "Health Khazana",
+                "description": "The number of active participants you had last year in this customer segment",
+                "height" : "360",
+                "width" : "360",
+                "name" : ["logo_B1"]
+            },
+            {
+                "title": "Trendz",
+                "description": "The number of active participants you had last year in this customer segment",
+                "height" : "360",
+                "width" : "360",
+                "name" : ["logo_C1"]
+            }
+        ]
+    },
+    {
+        "type": "poster",
+         "content":[
+            {
+                "title": "Web Developement",
+                "description": "The number of active participants you had last year in this customer segment",
+                "height" : ["360", "500"],
+                "width" : ["360", "500"],
+                "name" : ["poster_A1", "poster_A2"]
+            },
+             {
+                "title": "Abit",
+                "description": "The number of active participants you had last year in this customer segment",
+                "height" : ["360", "500"],
+                "width" : ["360", "500"],
+                "name" : ["poster_B1", "poster_B2", "poster_B3"]
+            },
+            {
+                "title": "Zodiac",
+                "description": "The number of active participants you had last year in this customer segment",
+                "height" : ["360"],
+                "width" : ["360"],
+                "name" : ["poster_C1"]
+            }
+        ]
+    },
+    {
+        "type": "unlabled",
+        "content":[
+             {
+                "title": "Zodiac",
+                "description": "The number of active participants you had last year in this customer segment",
+                "height" : ["360", "500","360", "500"],
+                "width" : ["360", "500","360", "500"],
+                "name" : ["unlabled_A1", "unlabled_A2", "unlabled_A3", "unlabled_A4"]
+            }
+        ]
+    }
+]

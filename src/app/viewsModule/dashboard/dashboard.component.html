@@ -1,0 +1,21 @@
+<div class="dashboard-wrapper">
+    <div class="dashboard-menu-left">
+        <ul>
+          <li><a class="dashboard-nav-link" [routerLink]="['/dashboard', 'about']" routerLinkActive="active">About</a></li>
+          <li><a class="dashboard-nav-link" [routerLink]="['/dashboard', 'resume']" routerLinkActive="active">Resume</a></li>
+          <li><a class="dashboard-nav-link" [routerLink]="['/dashboard', 'contact']" routerLinkActive="active">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <div class="dashboard-middle-router">
+    <router-outlet></router-outlet>
+    </div>
+
+    <div class="dashboard-menu-right">
+        <ul>
+          <li><a class="dashboard-nav-link" [routerLink]="['/dashboard', 'experience']" routerLinkActive="active">Experience</a></li>
+          <li><a class="dashboard-nav-link" [routerLink]="['/dashboard', 'development']" routerLinkActive="active">Development</a></li>
+          <li><a class="dashboard-nav-link" [routerLink]="['/dashboard', 'designs']" routerLinkActive="active">Designing</a></li>
+        </ul>
+    </div>    
+</div>

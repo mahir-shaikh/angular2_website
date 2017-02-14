@@ -1,0 +1,53 @@
+.dashboard-wrapper {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.dashboard-wrapper ul li{
+	list-style: none;
+    margin : auto;
+}
+
+.dashboard-wrapper .dashboard-middle-router{
+    order: 2;
+      margin: auto 100px;
+    height: 100vh;
+}
+
+.dashboard-menu-left {
+	order: 1;
+	align-self: flex-start;
+    margin: auto 100px;
+    height: 100vh;
+}
+
+.dashboard-menu-left ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    height: 100vh;    
+}
+
+.dashboard-menu-left ul li.dashboard-nav-link {
+	align-self: center;
+}
+
+.dashboard-menu-right {
+	order: 3;
+    margin: auto 100px;
+    height: 100vh;    
+}
+
+.dashboard-menu-right ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    height: 100vh;    
+}
+
+.dashboard-menu-right ul li.dashboard-nav-link {
+	align-self: center;
+}

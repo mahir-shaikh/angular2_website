@@ -6,6 +6,7 @@
 	width: 25%;
 	float: right;
 	z-index: 3;
+	padding: 30px 0px;
 	transition: width 0.8s ease;
 }
 

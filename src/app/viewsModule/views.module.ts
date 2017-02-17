@@ -38,8 +38,8 @@ import { SliderComponent } from './slider/slider.component';
     ContactComponent,
     DesigningComponent,
     ResumeComponent,
-    DevelopementComponent,
-    SliderComponent
+    DevelopementComponent,
+    SliderComponent,
 ],
     providers: [],
 })

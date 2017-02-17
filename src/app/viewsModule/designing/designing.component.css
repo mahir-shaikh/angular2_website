@@ -1,13 +1,14 @@
 .design {
 	background: #fff;
 	height: 100%;
-	border-left: 6px solid #02cca4;
+	border-left: 6px solid #025aa5;
 	position: relative;
 	width: 25%;
 	float: right;
 	z-index: 3;
 	padding: 30px 0px;
 	transition: width 0.8s ease;
+	  min-width: 250px;
 }
 
 .design-modal{
@@ -17,7 +18,7 @@
 .design-title {
 	font-weight: 600;
 	font-size: 1.4em;
-	color: #02cca4;
+	color: #025aa5;
 	margin: 0 2rem;
 	text-transform: uppercase;
 }
@@ -27,7 +28,7 @@
 	height: 40px;
 	border-radius: 50%;
 	right: 10px;
-	top: 15px;
+	top: -5px;
 	float: right;
 	cursor: pointer;
 	position: relative;
@@ -41,6 +42,8 @@
 	position: relative;
 	padding: 20px 0;
 	margin: 0 2rem;
+  height: 100%;
+  width: 100%;
 }
 
 .design-link {
@@ -111,5 +114,9 @@
 .attachedRight{
     right:0px;
     position:absolute;
+}
+
+.isActive{
+  text-decoration: underline !important;
 }
 

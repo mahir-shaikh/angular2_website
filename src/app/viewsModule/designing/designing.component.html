@@ -8,9 +8,9 @@
         
         <div class="design-links">
             <!-- <a (click)="openChild()">Sales and Marketing</a> -->
-            <a class="row design-link" (click)="expanded=true; activeIndex=0"><div class="design-icon icon-glossary-fill"></div><p class="design-link-text"> Logos</p></a>
-            <a class="row design-link" (click)="expanded=true; activeIndex=1"><div class="design-icon icon-glossary-fill"></div><p class="design-link-text"> Posters</p></a>
-            <a class="row design-link" (click)="expanded=true; activeIndex=2"><div class="design-icon icon-glossary-fill"></div><p class="design-link-text"> UnLabled/Undefined</p></a>
+            <a class="row design-link" (click)="expanded=true; activeIndex=0" [class.isActive]="activeIndex==0"><p class="design-link-text"> Logos</p></a>
+            <a class="row design-link" (click)="expanded=true; activeIndex=1" [class.isActive]="activeIndex==1"><p class="design-link-text"> Posters</p></a>
+            <a class="row design-link" (click)="expanded=true; activeIndex=2" [class.isActive]="activeIndex==2"><p class="design-link-text"> UnLabled/Undefined</p></a>
             
         </div>
         <div class="design-expansion" *ngIf="expanded" [ngSwitch]="activeIndex">

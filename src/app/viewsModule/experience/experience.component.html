@@ -8,9 +8,9 @@
         
         <div class="experience-links">
             <!-- <a (click)="openChild()">Sales and Marketing</a> -->
-            <a class="row experience-link" (click)="expanded=true; activeIndex=0"><div class="experience-icon icon-glossary-fill"></div><p class="experience-link-text"> Quarry</p></a>
-            <a class="row experience-link" (click)="expanded=true; activeIndex=1"><div class="experience-icon icon-glossary-fill"></div><p class="experience-link-text"> Zeus Learning</p></a>
-            <a class="row experience-link" (click)="expanded=true; activeIndex=2"><div class="experience-icon icon-glossary-fill"></div><p class="experience-link-text"> BTS</p></a>
+            <a class="row experience-link" (click)="expanded=true; activeIndex=0" [class.isActive]="activeIndex==0"><p class="experience-link-text"> Quarry</p></a>
+            <a class="row experience-link" (click)="expanded=true; activeIndex=1" [class.isActive]="activeIndex==1"><p class="experience-link-text"> Zeus Learning</p></a>
+            <a class="row experience-link" (click)="expanded=true; activeIndex=2" [class.isActive]="activeIndex==2"><p class="experience-link-text"> BTS</p></a>
             
         </div>
         <div class="experience-expansion" *ngIf="expanded" [ngSwitch]="activeIndex">

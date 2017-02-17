@@ -8,9 +8,9 @@
         
         <div class="contact-links">
             <!-- <a (click)="openChild()">Sales and Marketing</a> -->
-            <a class="row contact-link" (click)="expanded=true; activeIndex=0"><div class="contact-icon icon-glossary-fill"></div><p class="contact-link-text"> Call</p></a>
-            <a class="row contact-link" (click)="expanded=true; activeIndex=1"><div class="contact-icon icon-glossary-fill"></div><p class="contact-link-text"> Mail</p></a>
-            <a class="row contact-link" (click)="expanded=true; activeIndex=2"><div class="contact-icon icon-glossary-fill"></div><p class="contact-link-text"> Reach out</p></a>
+            <a class="row contact-link" (click)="expanded=true; activeIndex=0" [class.isActive]="activeIndex==0"><p class="contact-link-text"> Call</p></a>
+            <a class="row contact-link" (click)="expanded=true; activeIndex=1" [class.isActive]="activeIndex==1"><p class="contact-link-text"> Mail</p></a>
+            <a class="row contact-link" (click)="expanded=true; activeIndex=2" [class.isActive]="activeIndex==2"><p class="contact-link-text"> Reach out</p></a>
             
         </div>
         <div class="contact-expansion" *ngIf="expanded" [ngSwitch]="activeIndex">

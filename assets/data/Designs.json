@@ -1,7 +1,5 @@
-[
-    {
-        "type": "logo",
-        "content":[
+{
+    "logo" : [        
             {
                 "title": "Rio",
                 "description": "The number of active participants you had last year in this customer segment",
@@ -22,12 +20,10 @@
                 "height" : "360",
                 "width" : "360",
                 "name" : ["logo_C1"]
-            }
-        ]
-    },
-    {
-        "type": "poster",
-         "content":[
+            }        
+    ],
+    "poster":[
+        
             {
                 "title": "Web Developement",
                 "description": "The number of active participants you had last year in this customer segment",
@@ -49,11 +45,8 @@
                 "width" : ["360"],
                 "name" : ["poster_C1"]
             }
-        ]
-    },
-    {
-        "type": "unlabled",
-        "content":[
+    ],
+    "unlabled" :[
              {
                 "title": "Zodiac",
                 "description": "The number of active participants you had last year in this customer segment",
@@ -61,6 +54,5 @@
                 "width" : ["360", "500","360", "500"],
                 "name" : ["unlabled_A1", "unlabled_A2", "unlabled_A3", "unlabled_A4"]
             }
-        ]
-    }
-]
+    ]
+}

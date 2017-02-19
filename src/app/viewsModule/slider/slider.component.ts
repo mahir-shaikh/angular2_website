@@ -1,5 +1,5 @@
 import { SliderDataService } from './sliderData.service';
-import {Component,  OnInit} from '@angular/core';
+import {Input, Component,   OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-slider',
@@ -8,71 +8,67 @@ import {Component,  OnInit} from '@angular/core';
   providers : [SliderDataService]
 })
 export class SliderComponent implements OnInit {
+  @Input() activeNumber : number;
   slideIndex : number = 1;
   JsonArrayData = {
     "logo" : [        
             {
                 "title": "Rio",
                 "description": "The number of active participants you had last year in this customer segment",
-                "height" : "360",
-                "width" : "360",
-                "name" : ["logo_A1"]
+                "name" : ["assets/images/logo_A1.png"]
             },
             {
                 "title": "Health Khazana",
                 "description": "The number of active participants you had last year in this customer segment",
-                "height" : "360",
-                "width" : "360",
-                "name" : ["logo_B1"]
+                "name" : ["assets/images/logo_B1.png"]
+            },
+            {
+                "title": "Stts",
+                "description": "The number of active participants you had last year in this customer segment",
+                "name" : ["assets/images/logo_C1.png"]
             },
             {
                 "title": "Trendz",
                 "description": "The number of active participants you had last year in this customer segment",
-                "height" : "360",
-                "width" : "360",
-                "name" : ["logo_C1"]
-            }        
-  ],
+                "name" : ["assets/images/logo_D1.png"]
+            }         
+    ],
     "poster":[
         
             {
-                "title": "Web Developement",
+                "title": "Innovision",
                 "description": "The number of active participants you had last year in this customer segment",
-                "height" : ["360", "500"],
-                "width" : ["360", "500"],
-                "name" : ["poster_A1", "poster_A2"]
+                "name" : ["assets/images/poster_A1.jpg","assets/images/poster_A2.jpg","assets/images/poster_A3.jpg"]
             },
              {
-                "title": "Abit",
+                "title": "Computer Assembly Workshop",
                 "description": "The number of active participants you had last year in this customer segment",
-                "height" : ["360", "500"],
-                "width" : ["360", "500"],
-                "name" : ["poster_B1", "poster_B2", "poster_B3"]
+                "name" : ["assets/images/poster_B1.jpg", "assets/images/poster_B2.jpg", "assets/images/poster_B3.jpg","assets/images/poster_B4.jpg"]
             },
             {
-                "title": "Zodiac",
+                "title": "Abit IV",
                 "description": "The number of active participants you had last year in this customer segment",
-                "height" : ["360"],
-                "width" : ["360"],
-                "name" : ["poster_C1"]
+                "name" : ["assets/images/poster_C1.jpg"]
+            },
+            {
+                "title": "Abit Orientation",
+                "description": "The number of active participants you had last year in this customer segment",
+                "name" : ["assets/images/poster_D1.jpg"]
             }
-        ],
+    ],
     "unlabled" :[
              {
                 "title": "Zodiac",
                 "description": "The number of active participants you had last year in this customer segment",
-                "height" : ["360", "500","360", "500"],
-                "width" : ["360", "500","360", "500"],
                 "name" : ["unlabled_A1", "unlabled_A2", "unlabled_A3", "unlabled_A4"]
             }
-        ]
-    };
+    ]
+};
     currentTitle : string = "";
     currentImage : string = "";
     currentDescription : string = "";
-    currentScenario : string = "logo";
+    currentScenario : string = "";
     currentIndex : number = 0;
-    ImagePath : string = "";
     isImageArray : boolean = false;
     ImageArray = [];
     ImageIndex : number = 0;
@@ -143,20 +139,18 @@ showSlideData(){
    }else{
      this.isImageArray = false;
    }
-   this.ImagePath = "./../../../../assets/images/" + this.currentImage + ".png";
 }
 
 getScenario() : string {
   let scenario : string ="";
-  let activeNumber = 2;
-  switch(activeNumber){
-    case 1 : 
+  switch(this.activeNumber){
+    case 0 : 
       scenario = "logo";
       break;
-    case 2 :
+    case 1 :
       scenario = "poster";
       break;
-    case 3 :
+    case 2 :
       scenario = "unlabled";
       break;
     default:

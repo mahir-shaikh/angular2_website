@@ -9,7 +9,7 @@
           </div>
 
           <div class="row slide-image" *ngIf="!isImageArray">
-            <img src="{{ImagePath}}">
+            <img src="{{currentImage}}">
           </div>
 
           
@@ -19,7 +19,7 @@
 
                 <div class="carousel-item" *ngFor="let ImageItem of ImageArray; let i = index; let isFirst = first"
                            [class.active]="ImageIndex == i" [class.active]="isFirst">
-                  {{ImageItem}}
+                  <img src={{ImageItem}}>
                 </div>
               </div>
               <a class="carousel-control-prev" role="button" (click)="PreviousImage()">

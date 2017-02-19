@@ -16,16 +16,15 @@
         <div class="design-expansion" *ngIf="expanded" [ngSwitch]="activeIndex">
             
             <div class="expanded-content glossary" *ngSwitchCase="0">
-                Logos
-                <app-slider></app-slider>
+                <app-slider [activeNumber]="0"></app-slider>
             </div>
 
             <div class="expanded-content guide" *ngSwitchCase="1">
-                Posters
+                <app-slider [activeNumber]="1"></app-slider>                
             </div>
 
             <div class="expanded-content planning" *ngSwitchCase="2">
-                Unlabled/Undefined
+                <app-slider [activeNumber]="2"></app-slider>                
             </div>
         </div>
     </div>

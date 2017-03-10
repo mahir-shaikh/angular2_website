@@ -6,4 +6,12 @@ export class SliderDataService {
 
 constructor(private http : Http) { }
 
+getSliderData() {
+    return this.http.get('./assets/data/Designs.json').map(
+        result => {
+            let data = result.json();
+            return data;
+        });
+}
+
 }

@@ -10,73 +10,28 @@ import {Input, Component,   OnInit} from '@angular/core';
 export class SliderComponent implements OnInit {
   @Input() activeNumber : number;
   slideIndex : number = 1;
-  JsonArrayData = {
-    "logo" : [        
-            {
-                "title": "Rio",
-                "description": "The number of active participants you had last year in this customer segment",
-                "name" : ["assets/images/logo_A1.png"]
-            },
-            {
-                "title": "Health Khazana",
-                "description": "The number of active participants you had last year in this customer segment",
-                "name" : ["assets/images/logo_B1.png"]
-            },
-            {
-                "title": "Stts",
-                "description": "The number of active participants you had last year in this customer segment",
-                "name" : ["assets/images/logo_C1.png"]
-            },
-            {
-                "title": "Trendz",
-                "description": "The number of active participants you had last year in this customer segment",
-                "name" : ["assets/images/logo_D1.png"]
-            }         
-    ],
-    "poster":[
-        
-            {
-                "title": "Innovision",
-                "description": "The number of active participants you had last year in this customer segment",
-                "name" : ["assets/images/poster_A1.jpg","assets/images/poster_A2.jpg","assets/images/poster_A3.jpg"]
-            },
-             {
-                "title": "Computer Assembly Workshop",
-                "description": "The number of active participants you had last year in this customer segment",
-                "name" : ["assets/images/poster_B1.jpg", "assets/images/poster_B2.jpg", "assets/images/poster_B3.jpg","assets/images/poster_B4.jpg"]
-            },
-            {
-                "title": "Abit IV",
-                "description": "The number of active participants you had last year in this customer segment",
-                "name" : ["assets/images/poster_C1.jpg"]
-            },
-            {
-                "title": "Abit Orientation",
-                "description": "The number of active participants you had last year in this customer segment",
-                "name" : ["assets/images/poster_D1.jpg"]
-            }
-    ],
-    "unlabled" :[
-             {
-                "title": "Zodiac",
-                "description": "The number of active participants you had last year in this customer segment",
-                "name" : ["unlabled_A1", "unlabled_A2", "unlabled_A3", "unlabled_A4"]
-            }
-    ]
-};
-    currentTitle : string = "";
-    currentImage : string = "";
-    currentDescription : string = "";
-    currentScenario : string = "";
-    currentIndex : number = 0;
-    isImageArray : boolean = false;
-    ImageArray = [];
-    ImageIndex : number = 0;
+  JsonArrayData = {};
+  currentTitle : string = "";
+  currentImage : string = "";
+  currentDescription : string = "";
+  currentScenario : string = "";
+  currentIndex : number = 0;
+  isImageArray : boolean = false;
+  ImageArray = [];
+  ImageIndex : number = 0;
 
   constructor(private sliderDataService : SliderDataService) {
    }
 
   ngOnInit() {
+    this.sliderDataService.getSliderData().subscribe(
+      data => this.CopyJsonData(data)
+    );
+    
+  }
+
+  CopyJsonData(JsonData){
+    this.JsonArrayData = JsonData;
     this.showSlideData();
   }
 

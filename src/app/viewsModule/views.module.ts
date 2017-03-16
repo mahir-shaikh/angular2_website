@@ -13,6 +13,7 @@ import { DesigningComponent } from './designing/designing.component';
 import { ResumeComponent } from './resume/resume.component';
 import { DevelopementComponent } from './developement/developement.component';
 import { SliderComponent } from './slider/slider.component';
+import { EmailComponent } from './email/email.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SliderComponent } from './slider/slider.component';
         ContactComponent,
         DesigningComponent,
         ResumeComponent,
-        DevelopementComponent              
+        DevelopementComponent,
+        EmailComponent            
     ],
 
     declarations: [
@@ -40,6 +42,7 @@ import { SliderComponent } from './slider/slider.component';
     ResumeComponent,
     DevelopementComponent,
     SliderComponent,
+    EmailComponent
 ],
     providers: [],
 })

@@ -14,10 +14,10 @@ import { ResumeComponent } from './resume/resume.component';
 import { DevelopementComponent } from './developement/developement.component';
 import { SliderComponent } from './slider/slider.component';
 import { EmailComponent } from './email/email.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-    imports: [RouterModule, CommonModule],
+    imports: [RouterModule, CommonModule, FormsModule],
     exports: [
         SplashComponent,
         DashboardComponent,

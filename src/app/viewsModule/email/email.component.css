@@ -18,6 +18,12 @@ textarea:focus,textarea:active{
     background-color : #005495;
 }
 
+input:-webkit-autofill,
+textarea:-webkit-autofill{
+    color: #FFF !important;
+    background-color : #005495 !important;
+}
+
 input,textarea{
     color : #005495;
 }
@@ -30,6 +36,8 @@ textarea::-webkit-input-placeholder {
 .submit-button{
     background-color: #005495;
     border-radius: 5px;
+    color : #FFF;
+    cursor: pointer;
 }
 
 .text-wrapper{
@@ -55,4 +63,20 @@ textarea::-webkit-input-placeholder {
 
 .button-container{
     text-align: center;
+}
+
+.result-wrapper{
+    margin: 10px;
+    font-size: 12px;
+    border: 2px solid;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.unsuccessfull{
+    border-color: #900c09;
+}
+
+.successfull{
+    border-color : #449d44;
 }

@@ -10,28 +10,55 @@ export class AboutComponent implements OnInit {
    private isClosing = false;
     private isOpening = true;
     private modalShow: boolean = true;
-    private expanded = false;
-    private activeIndex: number;
-    private planningStepsText:string = "";
-    private guidePage1Text:string = "";
-    private guidePage2Text:string = "";
-    private guidePage3Text:string = "";
-    private guidePage4Text:string = "";
-    private guidePage5Text:string = "";
+    private expanded = true;
+    AboutData = [
+            {
+        "type": "heading",
+        "value": "Apr 2014"
+    },
+    {
+        "type": "content",
+        "value": {
+            "heading":"Surprising Headline Right Here",
+            "subheading":" 3 hours ago",
+            "body":["Lorem Ipsum and such."]
+        }
+    },
+    {
+        "type": "content",
+        "value": {
+            "heading":"Breaking into Spring!",
+            "subheading":" 4/07/2014",
+            "body":["Hope the weather gets a bit nicer...","Y'know, with more sunlight."]
+        }
+    },
+    {
+        "type": "heading",
+        "value": "Mar 2014"
+    },
+    {
+        "type": "content",
+        "value": {
+            "heading":"New Apple Device Release Date",
+            "body":["In memory of Steve Jobs."]
+        }
+    },
+    {
+        "type": "content",
+        "value": {
+            "heading":"No icon here",
+            "subheading":" 4/07/2014",
+            "body":['Here you will find some beautiful photography for your viewing pleasure, courtesy of <a href="http://lorempixel.com/">lorempixel</a>',"<img src='http://lorempixel.com/600/300/nightlife/' alt='lorem pixel'>"]
+        }
+    }
+    ];
+
     
     constructor(private router: Router) { }
 
     ngOnInit() {
         this.isClosing = false;
         this.isOpening = true;
-
-        this.planningStepsText = "PlanningStepsPage1Text";
-
-        this.guidePage1Text = "GuidePage1Text";
-        this.guidePage2Text = "GuidePage2Text";
-        this.guidePage3Text = "GuidePage3Text";
-        this.guidePage4Text = "GuidePage4Text";
-        this.guidePage5Text = "GuidePage5Text";
     }
 
     onClose() {

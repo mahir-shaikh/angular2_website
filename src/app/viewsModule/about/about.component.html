@@ -3,29 +3,27 @@
     <div class="about-close-btn col-xs-12">
         <div (click)="onClose()" class="about-close fa fa-times"></div>
     </div>
-	<p class="about-title">About </p>
-    <div class="about-content">
-        
-        <div class="about-links">
-            <!-- <a (click)="openChild()">Sales and Marketing</a> -->
-            <a class="row about-link" (click)="expanded=true; activeIndex=0" [class.isActive]="activeIndex==0"><p class="about-link-text"> School</p></a>
-            <a class="row about-link" (click)="expanded=true; activeIndex=1" [class.isActive]="activeIndex==1"><p class="about-link-text"> College</p></a>
-            <a class="row about-link" (click)="expanded=true; activeIndex=2" [class.isActive]="activeIndex==2"><p class="about-link-text"> Engineering</p></a>
-            
-        </div>
-        <div class="about-expansion" *ngIf="expanded" [ngSwitch]="activeIndex">
-            
-            <div class="expanded-content glossary" *ngSwitchCase="0">
-                School
-            </div>
+	<p class="about-title header">About </p>
+    <div class="about-content container">
+        <ul class="timeline">
+            <li *ngFor="let contentBlock of AboutData; let blockIndex = index"
+                 [class.timeline-inverted]="contentBlock.type == 'content' && blockIndex%2 == 0">
+                <div *ngIf="contentBlock.type == 'heading'" class="tldate">{{contentBlock.value}}</div>
 
-            <div class="expanded-content guide" *ngSwitchCase="1">
-                College
-            </div>
-
-            <div class="expanded-content planning" *ngSwitchCase="2">
-                Engineering
-            </div>
-        </div>
+                <div *ngIf="contentBlock.type == 'content'">
+                    <div class="tl-circ"></div>
+                    <div class="timeline-panel">
+                        <div class="tl-heading">
+                        <h4>{{contentBlock.value.heading}}</h4>
+                        <p *ngIf="contentBlock.value.subheading"><small class="text-muted"><i class="fa fa-clock-o">{{contentBlock.value.subheading}}</i></small></p>
+                        </div>
+                        <div class="tl-body">
+                        <p *ngFor="let data of contentBlock.value.body" [innerHTML]="data">                            
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>

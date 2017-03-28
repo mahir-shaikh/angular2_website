@@ -1,65 +1,39 @@
+import { AboutDataService } from './aboutData.service';
 import {Router} from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
+  providers:[AboutDataService]
 })
 export class AboutComponent implements OnInit {
    private isClosing = false;
     private isOpening = true;
     private modalShow: boolean = true;
     private expanded = true;
-    AboutData = [
-            {
-        "type": "heading",
-        "value": "Apr 2014"
-    },
-    {
-        "type": "content",
-        "value": {
-            "heading":"Surprising Headline Right Here",
-            "subheading":" 3 hours ago",
-            "body":["Lorem Ipsum and such."]
-        }
-    },
-    {
-        "type": "content",
-        "value": {
-            "heading":"Breaking into Spring!",
-            "subheading":" 4/07/2014",
-            "body":["Hope the weather gets a bit nicer...","Y'know, with more sunlight."]
-        }
-    },
-    {
-        "type": "heading",
-        "value": "Mar 2014"
-    },
-    {
-        "type": "content",
-        "value": {
-            "heading":"New Apple Device Release Date",
-            "body":["In memory of Steve Jobs."]
-        }
-    },
-    {
-        "type": "content",
-        "value": {
-            "heading":"No icon here",
-            "subheading":" 4/07/2014",
-            "body":['Here you will find some beautiful photography for your viewing pleasure, courtesy of <a href="http://lorempixel.com/">lorempixel</a>',"<img src='http://lorempixel.com/600/300/nightlife/' alt='lorem pixel'>"]
-        }
-    }
-    ];
+    private Loaded:boolean = false;
+    AboutData = [];
 
     
-    constructor(private router: Router) { }
+    constructor(private router: Router, private aboutDataService : AboutDataService) { }
 
     ngOnInit() {
         this.isClosing = false;
         this.isOpening = true;
+        this.Loaded = false;
+
+        this.aboutDataService.getAboutData().subscribe(
+             data => {
+                 setTimeout(()=>{
+                    this.AboutData = data;
+                    this.Loaded = true;
+                 },3000);
+                 
+        });
     }
+    
 
     onClose() {
         this.isClosing = true;

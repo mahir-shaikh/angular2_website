@@ -69,6 +69,13 @@
   text-decoration: underline !important;
 }
 
+.loading{
+    font-size: 3rem;
+    left: 47%;
+    position: fixed;
+    top: 47%;
+}
+
 
 /*Timeline Css*/
 
@@ -225,7 +232,7 @@
   margin-top: 5px;
 }
 
-.about-content img{
+.tl-body .image{
   max-width: 100%;
 }
 

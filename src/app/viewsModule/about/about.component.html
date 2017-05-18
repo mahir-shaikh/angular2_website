@@ -7,8 +7,10 @@
     <div class="about-content container">
         <div class="fa fa-spinner fa-pulse loading" *ngIf="!Loaded"></div>
         <ul class="timeline" *ngIf="Loaded">
-            <li *ngFor="let contentBlock of AboutData; let blockIndex = index"
-                 [class.timeline-inverted]="contentBlock.type == 'content' && blockIndex%2 == 0">
+            <li class="animated" *ngFor="let contentBlock of AboutData; let blockIndex = index"
+                 [class.timeline-inverted]="contentBlock.type == 'content' && blockIndex%2 == 0"
+                 [class.slideInRight]="contentBlock.type == 'content' && blockIndex%2 == 0"
+                 [class.slideInLeft]="blockIndex%2 != 0">
                 <div *ngIf="contentBlock.type == 'heading'" class="tldate">{{contentBlock.value}}</div>
 
                 <div *ngIf="contentBlock.type == 'content'">
@@ -24,6 +26,7 @@
                         </p>
                         <p *ngFor="let data of contentBlock.value.body" [innerHTML]="data">                            
                         </p>
+                        <p class="moral-text" *ngIf="contentBlock.value.moral">Moral of the Story : {{contentBlock.value.moral}}</p>
                         </div>
                     </div>
                 </div>

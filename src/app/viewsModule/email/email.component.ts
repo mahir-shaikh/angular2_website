@@ -26,14 +26,16 @@ export class EmailComponent implements OnInit,OnDestroy {
  
     handleResponse(response){
        console.log(`msg is: {response.status}`);
- 
+      this.result = "Well.... to tell you the truth i didn't wanted to waste money buying email service so that once in a blue moon someone could send me an email. Why don't you just contact me directly using the links i have provided in the other section of contact me."
+       
       if(response.status =='success'){
         this.message = {name: '', email: '', message: ''};
         this.result = 'Successfully Sent!!!';
       }
  
       if(response.status =='error'){
-        this.result = 'Some Error Occurred. Please try again!!!';
+        // this.result = 'Some Error Occurred. Please try again!!!';
+        this.result = "Well.... to tell you the truth i didn't wanted to waste money buying email service so that once in a blue moon someone could send me an email. Why don't you just contact me directly using the links i have provided in the other section of contact me."
       }
     }
 

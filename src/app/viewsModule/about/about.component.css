@@ -195,6 +195,10 @@
   right: auto;
 }
 
+.moral-text {
+  color : #025aa5;
+}
+
 
 /** timeline circle icons **/
 .timeline li .tl-circ {

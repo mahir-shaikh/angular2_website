@@ -14,6 +14,14 @@
 	font-weight: 600
 }
 
+.dashboard-nav-link .dashboard-nav-text{
+	display: none;
+}
+
+.dashboard-nav-link:hover .dashboard-nav-text{
+	display: inline-block;
+}
+
 .dashboard-wrapper .dashboard-nav-link:hover{
 	background-color: #025aa5;
 	color: #FFF;
@@ -26,24 +34,39 @@
 
 .dashboard-menu-left .dashboard-nav-link{
 	border-bottom-right-radius: 50%;
-	border-top-right-radius: 50%;	
+	border-top-right-radius: 50%;
+	/*border-radius: 50%;*/
+}
+
+.dashboard-menu-left .dashboard-nav-link:hover {
+	border-bottom-right-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-left-radius: 0%;
+	border-top-left-radius: 0%;
 }
 
 .dashboard-menu-right .dashboard-nav-link{
 	border-bottom-left-radius: 50%;
-	border-top-left-radius: 50%;	
+	border-top-left-radius: 50%;
+	/*border-radius: 50%;*/
 }
 
+.dashboard-menu-right .dashboard-nav-link:hover{
+	border-bottom-left-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 0%;
+	border-top-right-radius: 0%;
+}
 .dashboard-wrapper ul li{
 	list-style: none;
-    margin : auto;
-	width : 100%;
-	text-align:center;
+    margin : auto 0px;
+	/*width : 100%;*/
+	/*text-align:center;*/
 }
 
 .dashboard-wrapper .dashboard-middle-router{
     order: 2;
-      margin: auto 0px;
+    margin: auto 0px;
     height: 100%;
 }
 
@@ -62,7 +85,7 @@
 }
 
 .dashboard-menu-left ul li.dashboard-nav-link {
-	align-self: center;
+	display: inline-table;
 }
 
 .dashboard-menu-right {
@@ -79,5 +102,7 @@
 }
 
 .dashboard-menu-right ul li.dashboard-nav-link {
-	align-self: center;
+	display: inline-table;
+	direction: rtl;
+	align-self: flex-end;
 }

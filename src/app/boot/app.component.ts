@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, ViewContainerRef, OnInit, EventEmitter } from '@angular/core';
 import '../../../assets/css/styles.css';
 
@@ -7,8 +8,13 @@ import '../../../assets/css/styles.css';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-    constructor() { }
+
+    constructor(private router: Router) { }
 
     ngOnInit() {
+    }
+
+    showSocialComponent(){
+        this.router.navigateByUrl("/social")
     }
 }

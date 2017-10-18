@@ -56,12 +56,23 @@ video {
 
 .mobile-view {
     display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: 80px;
+    z-index: 4;
   }
 
+.button-container{
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.button-container .fa.active{
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  .router {
-    display: none;
-  }
   .mobile-view {
     display: block;
   }

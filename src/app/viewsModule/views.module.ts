@@ -15,6 +15,8 @@ import { DevelopementComponent } from './developement/developement.component';
 import { SliderComponent } from './slider/slider.component';
 import { EmailComponent } from './email/email.component';
 import { FormsModule } from '@angular/forms';
+import { SocialComponent } from './social/social.component';
+import { SmallScreenComponent } from './smallScreen/smallScreen.component';
 
 @NgModule({
     imports: [RouterModule, CommonModule, FormsModule],
@@ -28,7 +30,8 @@ import { FormsModule } from '@angular/forms';
         DesigningComponent,
         ResumeComponent,
         DevelopementComponent,
-        EmailComponent            
+        EmailComponent,
+        SocialComponent
     ],
 
     declarations: [
@@ -42,7 +45,9 @@ import { FormsModule } from '@angular/forms';
     ResumeComponent,
     DevelopementComponent,
     SliderComponent,
-    EmailComponent
+    EmailComponent,
+    SocialComponent,
+    SmallScreenComponent
 ],
     providers: [],
 })

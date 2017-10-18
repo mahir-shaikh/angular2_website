@@ -52,13 +52,18 @@
                 "title": "Abit Orientation",
                 "description": "Poster For Orientation.",
                 "name" : ["assets/images/poster_D1.jpg"]
+            },
+            {
+                "title": "Abit Events During College Fest",
+                "description": "Poster for different events at a Tech Fest.",
+                "name" : ["assets/images/poster_E1.jpg","assets/images/poster_E2.jpg"]
             }
     ],
     "unlabled" :[
 			{
                 "title": "Zodiac",
-                "description": "Various Superhero Quotes for social media.",
-                "name" : ["unlabled_A1", "unlabled_A2", "unlabled_A3", "unlabled_A4"]
+                "description": "Various Superhero Quotes for social media.(unfortuinately I lost all these when my PC got formatted hence the low quality)",
+                "name" : ["assets/images/unlabled_A1.jpg", "assets/images/unlabled_A2.jpg", "assets/images/unlabled_A3.jpg", "assets/images/unlabled_A4.jpg", "assets/images/unlabled_A5.jpg", "assets/images/unlabled_A6.jpg"]
             },
 			{
                 "title": "STTS",

@@ -11,7 +11,8 @@
 	padding:10px 20px;
 	border: 4px solid #025aa5;
 	background-color: #FFF;
-	font-weight: 600
+	font-weight: 600;
+    transition: all 0.5s ease;
 }
 
 .dashboard-nav-link .dashboard-nav-text{
@@ -33,29 +34,29 @@
 }
 
 .dashboard-menu-left .dashboard-nav-link{
-	border-bottom-right-radius: 50%;
-	border-top-right-radius: 50%;
+	/*border-bottom-right-radius: 50%;*/
+	/*border-top-right-radius: 50%;*/
 	/*border-radius: 50%;*/
 }
 
 .dashboard-menu-left .dashboard-nav-link:hover {
-	border-bottom-right-radius: 50%;
-	border-top-right-radius: 50%;
-	border-bottom-left-radius: 0%;
-	border-top-left-radius: 0%;
+	/*border-bottom-right-radius: 50%;*/
+	/*border-top-right-radius: 50%;*/
+	/*border-bottom-left-radius: 0%;*/
+	/*border-top-left-radius: 0%;*/
 }
 
 .dashboard-menu-right .dashboard-nav-link{
-	border-bottom-left-radius: 50%;
-	border-top-left-radius: 50%;
+	/*border-bottom-left-radius: 50%;*/
+	/*border-top-left-radius: 50%;*/
 	/*border-radius: 50%;*/
 }
 
 .dashboard-menu-right .dashboard-nav-link:hover{
-	border-bottom-left-radius: 50%;
-	border-top-left-radius: 50%;
-	border-bottom-right-radius: 0%;
-	border-top-right-radius: 0%;
+	/*border-bottom-left-radius: 50%;*/
+	/*border-top-left-radius: 50%;*/
+	/*border-bottom-right-radius: 0%;*/
+	/*border-top-right-radius: 0%;*/
 }
 .dashboard-wrapper ul li{
 	list-style: none;

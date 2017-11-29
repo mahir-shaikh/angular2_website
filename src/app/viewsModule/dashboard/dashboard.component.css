@@ -12,7 +12,9 @@
 	border: 4px solid #025aa5;
 	background-color: #FFF;
 	font-weight: 600;
-    transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	color: #025aa5;
 }
 
 .dashboard-nav-link .dashboard-nav-text{

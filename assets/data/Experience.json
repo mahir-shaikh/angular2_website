@@ -1,0 +1,50 @@
+[
+    {
+        "name":"ventac partners",
+        "role":"design + Css / html + coding",
+        "websiteUrl":"http://ventac-partners.com/",
+        "bg_img":"https://www.youandigraphics.com/images/projects/ventac_partners/index.jpg"
+    },
+    {
+        "name":"blue sand hotel",
+        "role":"design + Css / html + coding",
+        "websiteUrl":"https://www.youandigraphics.com/#",
+        "bg_img":"https://www.youandigraphics.com/images/projects/blue_sand_hotel/index.jpg"
+    },
+    {
+        "name":"diana shipping inc",
+        "role":"design",
+        "websiteUrl":"http://www.dianashippinginc.com/",
+        "bg_img":"https://www.youandigraphics.com/images/projects/diana_wilhelmsen_management_limited/index.jpg"
+    },
+    {
+        "name":"persado",
+        "role":"design + Css / html + coding",
+        "websiteUrl":"http://www.persado.com/",
+        "bg_img":"https://www.youandigraphics.com/images/projects/diana_shipping_inc/index.jpg"
+    },
+    {
+        "name":"diana enterprises inc",
+        "role":"design + Css / html + coding / branding",
+        "websiteUrl":"http://www.dianaenterprisesinc.com/",
+        "bg_img":"https://www.youandigraphics.com/images/projects/persado/index.jpg"
+    },
+    {
+        "name":"sintages tis pareas",
+        "role":"design + branding",
+        "websiteUrl":"http://www.sintagespareas.gr/",
+        "bg_img":"https://www.youandigraphics.com/images/projects/diana_enterprises_inc/index.jpg"
+    },
+    {
+        "name":"Quarry",
+        "role":"Digital Marketing Intern",
+        "websiteUrl":"http://ventac-partners.com/",
+        "bg_img":"https://www.youandigraphics.com/images/projects/ventac_partners/index.jpg"
+    },
+    {
+        "name":"Cenagage",
+        "role":"Software Developer",
+        "websiteUrl":"http://ventac-partners.com/",
+        "bg_img":"https://www.youandigraphics.com/images/projects/ventac_partners/index.jpg"
+    }
+]

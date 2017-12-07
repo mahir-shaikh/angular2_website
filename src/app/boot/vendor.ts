@@ -14,6 +14,7 @@ import 'rxjs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
 import '../../../assets/css/font-awesome.css';
+// import '../../libs/experince-script.js';
 
 // nouislider
 // import 'nouislider/distribute/nouislider.css';

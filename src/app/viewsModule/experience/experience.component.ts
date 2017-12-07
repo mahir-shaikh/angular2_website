@@ -10,7 +10,7 @@ export class ExperienceComponent implements OnInit {
    private isClosing = false;
     private isOpening = true;
     private modalShow: boolean = true;
-    private expanded = false;
+    private expanded = true;
     private activeIndex: number;
 
 

@@ -17,6 +17,7 @@ import { EmailComponent } from './email/email.component';
 import { FormsModule } from '@angular/forms';
 import { SocialComponent } from './social/social.component';
 import { SmallScreenComponent } from './smallScreen/smallScreen.component';
+import { ExperiencedataComponent } from './experiencedata/experiencedata.component';
 
 @NgModule({
     imports: [RouterModule, CommonModule, FormsModule],
@@ -31,7 +32,8 @@ import { SmallScreenComponent } from './smallScreen/smallScreen.component';
         ResumeComponent,
         DevelopementComponent,
         EmailComponent,
-        SocialComponent
+        SocialComponent,
+        ExperiencedataComponent
     ],
 
     declarations: [
@@ -40,14 +42,15 @@ import { SmallScreenComponent } from './smallScreen/smallScreen.component';
         AboutComponent,
         PageNotFoundComponent,
         ExperienceComponent,
-    ContactComponent,
-    DesigningComponent,
-    ResumeComponent,
-    DevelopementComponent,
-    SliderComponent,
-    EmailComponent,
-    SocialComponent,
-    SmallScreenComponent
+        ContactComponent,
+        DesigningComponent,
+        ResumeComponent,
+        DevelopementComponent,
+        SliderComponent,
+        EmailComponent,
+        SocialComponent,
+        SmallScreenComponent,
+        ExperiencedataComponent
 ],
     providers: [],
 })

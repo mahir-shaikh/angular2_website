@@ -11,6 +11,8 @@ export class ExperiencedataComponent implements OnInit {
     private Loaded:boolean = false;
     private currentIndex: number = 0;
     private maxCount: number;
+    private contentClassName: string = "";
+    private slideClassName: string = "";
     ExperienceData = [];
 
     constructor(private expDataService : ExpDataService) { }
@@ -29,17 +31,29 @@ export class ExperiencedataComponent implements OnInit {
     }
 
     onNext(){
+        // this.contentClassName = "slideInDown";
+        this.slideClassName = "flipInX";
         this.currentIndex++;
         if(this.currentIndex == this.maxCount+1){
             this.currentIndex = 0;
         }
+
+        setTimeout(()=>{
+            this.slideClassName = "";
+         },1000);
     }
 
     onPrev(){
+        // this.contentClassName = "slideInUp";
+        this.slideClassName = "flipInY";
         this.currentIndex--;
         if(this.currentIndex < 0){
             this.currentIndex = this.maxCount;
         }
+
+        setTimeout(()=>{
+            this.slideClassName = "";
+         },1000);
     }
 
 }

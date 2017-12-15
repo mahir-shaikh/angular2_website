@@ -14,16 +14,19 @@
         <div class="ps-slidewrapper">
             <div class="ps-slides">
                 <div *ngFor="let item of ExperienceData;let 'activeIndex' = index; let 'isFirst' = first; let 'isLast' = last" 
-                    [style.background-image]="'url(' + item.bg_img + ')'"
-                    [class.active]="activeIndex == currentIndex">        
+                    
+                    [class.active]="activeIndex == currentIndex" class="animated " [ngClass]="slideClassName">
+                    <img class="slide-image" [src]="item.bg_img">
                 </div>
             </div>
             
             <nav>
-                <a class="ps-prev" [style.background-image]="'url(' + ExperienceData[currentIndex == 0 ? maxCount : currentIndex - 1].bg_img + ')'"
-                    (click)="onPrev()"></a>
-                <a class="ps-next" [style.background-image]="'url(' + ExperienceData[currentIndex == maxCount ? 0 : currentIndex + 1 ].bg_img + ')'"
-                    (click)="onNext()"></a>
+                <a class="ps-prev" (click)="onPrev()">
+                        <img class="arrow-image" [src]="ExperienceData[currentIndex == 0 ? maxCount : currentIndex - 1].bg_img">
+                    </a>
+                <a class="ps-next" (click)="onNext()">
+                        <img class="arrow-image" [src]="ExperienceData[currentIndex == maxCount ? 0 : currentIndex + 1 ].bg_img">
+                    </a>
             </nav>
         </div>
     </section>

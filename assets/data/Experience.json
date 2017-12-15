@@ -39,12 +39,12 @@
         "name":"Quarry",
         "role":"Digital Marketing Intern",
         "websiteUrl":"http://ventac-partners.com/",
-        "bg_img":"https://www.youandigraphics.com/images/projects/ventac_partners/index.jpg"
+        "bg_img":"assets/images/logo_autodesk.png"
     },
     {
         "name":"Cenagage",
         "role":"Software Developer",
         "websiteUrl":"http://ventac-partners.com/",
-        "bg_img":"https://www.youandigraphics.com/images/projects/ventac_partners/index.jpg"
+        "bg_img":"assets/images/logo_avanade.svg"
     }
 ]

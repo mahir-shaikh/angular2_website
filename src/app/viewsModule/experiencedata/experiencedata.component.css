@@ -688,3 +688,19 @@ html,body {
     top: 0px;
     z-index: 999;
 }
+
+.slide-image{
+    max-height: 150px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+}
+
+.arrow-image{
+    max-height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+}

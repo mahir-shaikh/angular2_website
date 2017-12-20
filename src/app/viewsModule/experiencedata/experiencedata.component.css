@@ -590,10 +590,6 @@ html,body {
 }
 
 @media all and (max-width: 800px),all and (max-height: 800px) {
-    .wrapper {
-        height:auto
-    }
-
     .itemid_103 .wrapper {
         height: inherit
     }

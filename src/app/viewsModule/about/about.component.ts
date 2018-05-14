@@ -10,17 +10,14 @@ export class AboutComponent implements OnInit {
    private isClosing = false;
     private isOpening = true;
     private modalShow: boolean = true;
-    private expanded = true;
+    private expanded = false;
 
     
     constructor(private router: Router) { }
 
     ngOnInit() {
         this.isClosing = false;
-        this.isOpening = true;
-        this.Loaded = false;
-
-        
+        this.isOpening = true;        
     }
     
 

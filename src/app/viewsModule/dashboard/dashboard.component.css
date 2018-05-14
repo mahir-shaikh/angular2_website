@@ -39,6 +39,7 @@
 	/*border-bottom-right-radius: 50%;*/
 	/*border-top-right-radius: 50%;*/
 	/*border-radius: 50%;*/
+	align-self: flex-start;
 }
 
 .dashboard-menu-left .dashboard-nav-link:hover {

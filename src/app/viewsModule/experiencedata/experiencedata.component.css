@@ -561,8 +561,8 @@ html,body {
         display: inline-block;
         margin-bottom: 0;
         padding-right: 10px;
-        text-align: right;
-        width: 50%
+        text-align: center;
+        width: 100%
     }
 
     .ps-content div.viewsite a {

@@ -52,5 +52,23 @@
         "role":"design + Css / html + coding",
         "websiteUrl":"https://www.avanade.com/en",
         "bg_img":"assets/images/logo_avanade.svg"
+    },
+    {
+        "name":"Chevron",
+        "role":"design + Css / html + coding",
+        "websiteUrl":"https://www.chevron.com/",
+        "bg_img":"assets/images/logo_chevron.svg"
+    },
+    {
+        "name":"PepsiCo",
+        "role":"design + Css / html + coding",
+        "websiteUrl":"https://www.pepsico.com/",
+        "bg_img":"assets/images/logo_pepsico.png"
+    },
+    {
+        "name":"Franklin Templeton",
+        "role":"design + Css / html + coding",
+        "websiteUrl":"https://www.franklintempleton.com/",
+        "bg_img":"assets/images/logo_fti.png"
     }
 ]

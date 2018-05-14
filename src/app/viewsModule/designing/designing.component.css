@@ -38,6 +38,19 @@
 	border: solid 3px #005495;
 }
 
+.design-close:hover {
+  background-color: #005495;
+  color: #FFF;
+  -webkit-transition: 1s ease-out;
+  -moz-transition:  1s ease-out;
+  -ms-transition:  1s ease-out;
+  transition:  1s ease-out;
+  -ms-transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+
 .design-content {
 	position: relative;
 	padding: 20px 0;

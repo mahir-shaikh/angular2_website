@@ -1,37 +1,26 @@
-import { AboutDataService } from './aboutData.service';
 import {Router} from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css'],
-  providers:[AboutDataService]
+  styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
    private isClosing = false;
     private isOpening = true;
     private modalShow: boolean = true;
     private expanded = true;
-    private Loaded:boolean = false;
-    AboutData = [];
 
     
-    constructor(private router: Router, private aboutDataService : AboutDataService) { }
+    constructor(private router: Router) { }
 
     ngOnInit() {
         this.isClosing = false;
         this.isOpening = true;
         this.Loaded = false;
 
-        this.aboutDataService.getAboutData().subscribe(
-             data => {
-                 setTimeout(()=>{
-                    this.AboutData = data;
-                    this.Loaded = true;
-                 },3000);
-                 
-        });
+        
     }
     
 

@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { SocialComponent } from './social/social.component';
 import { SmallScreenComponent } from './smallScreen/smallScreen.component';
 import { ExperiencedataComponent } from './experiencedata/experiencedata.component';
+import { AboutdataComponent } from './aboutdata/aboutdata.component';
 
 @NgModule({
     imports: [RouterModule, CommonModule, FormsModule],
@@ -33,7 +34,8 @@ import { ExperiencedataComponent } from './experiencedata/experiencedata.compone
         DevelopementComponent,
         EmailComponent,
         SocialComponent,
-        ExperiencedataComponent
+        ExperiencedataComponent,
+        AboutdataComponent
     ],
 
     declarations: [
@@ -50,7 +52,8 @@ import { ExperiencedataComponent } from './experiencedata/experiencedata.compone
         EmailComponent,
         SocialComponent,
         SmallScreenComponent,
-        ExperiencedataComponent
+        ExperiencedataComponent,
+        AboutdataComponent
 ],
     providers: [],
 })

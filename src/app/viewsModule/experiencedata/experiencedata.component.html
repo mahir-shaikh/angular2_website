@@ -8,6 +8,7 @@
                 <h2>{{item.name}}</h2>
                 <p>{{item.role}}</p>
                 <div class="viewsite"><a [href]="item.websiteUrl" target="_blank">view live website</a></div>
+                <div class="viewsite" *ngIf="item.projectUrl"><a [href]="item.projectUrl" target="_blank">view project</a></div>
             </div>
     
         </div>

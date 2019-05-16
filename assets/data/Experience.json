@@ -63,6 +63,7 @@
         "name":"PepsiCo",
         "role":"design + Css / html + coding",
         "websiteUrl":"https://www.pepsico.com/",
+        "projectUrl":"https://drive.google.com/open?id=16zfaDXwqqnetlVp9Kmc06GFe9MvTC0sG",
         "bg_img":"assets/images/logo_pepsico.png"
     },
     {
@@ -70,5 +71,29 @@
         "role":"design + Css / html + coding",
         "websiteUrl":"https://www.franklintempleton.com/",
         "bg_img":"assets/images/logo_fti.png"
+    },
+    {
+        "name":"EY",
+        "role":"design + Css / html + coding",
+        "websiteUrl":"https://www.ey.com/en_gl",
+        "bg_img":"assets/images/logo_ey.png"
+    },
+    {
+        "name":"PWC",
+        "role":"design + Css / html + coding",
+        "websiteUrl":"https://www.pwc.in/",
+        "bg_img":"assets/images/logo_pwc.png"
+    },
+    {
+        "name":"EY",
+        "role":"design + Css / html + coding",
+        "websiteUrl":"https://www.ey.com/en_gl",
+        "bg_img":"assets/images/logo_ey.png"
+    },
+    {
+        "name":"BoozAllen",
+        "role":"design + Css / html + coding",
+        "websiteUrl":"https://www.boozallen.com/",
+        "bg_img":"assets/images/logo_bah.svg"
     }
 ]
